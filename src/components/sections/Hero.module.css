@@ -1,0 +1,75 @@
+.hero {
+    position: relative;
+    height: 90vh;
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: -80px;
+    /* Offset the header */
+}
+
+.imageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(253, 253, 252, 0.2), rgba(253, 253, 252, 0.8));
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.textWrap {
+    max-width: 800px;
+}
+
+.title {
+    color: var(--color-text);
+    margin-bottom: var(--spacing-4);
+    font-size: clamp(3rem, 6vw, 5rem);
+}
+
+.subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: var(--color-text);
+    margin-bottom: var(--spacing-8);
+    font-weight: 300;
+    max-width: 600px;
+}
+
+.cta {
+    background: var(--color-text);
+    color: var(--color-surface);
+}
+
+.cta:hover {
+    background: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 80vh;
+    }
+}

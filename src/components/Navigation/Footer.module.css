@@ -1,0 +1,115 @@
+.footer {
+    background-color: var(--color-primary-light);
+    padding-top: var(--spacing-16);
+    color: var(--color-text);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-12);
+    margin-bottom: var(--spacing-16);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: var(--spacing-4);
+}
+
+.icon {
+    color: var(--color-primary);
+}
+
+.text {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-6);
+}
+
+.socials {
+    display: flex;
+    gap: var(--spacing-4);
+}
+
+.socials a {
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-fast);
+}
+
+.socials a:hover {
+    background: var(--color-primary);
+    color: var(--color-surface);
+    border-color: var(--color-primary);
+}
+
+.heading {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-6);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.links {
+    list-style: none;
+}
+
+.links li {
+    margin-bottom: var(--spacing-2);
+}
+
+.links a {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+}
+
+.links a:hover {
+    color: var(--color-primary);
+    padding-left: 4px;
+}
+
+.contactList {
+    list-style: none;
+    margin-bottom: var(--spacing-6);
+}
+
+.contactList li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-4);
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+}
+
+.bookBtn {
+    background: var(--color-text);
+    color: var(--color-surface);
+    width: 100%;
+}
+
+.bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: var(--spacing-6) 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+}
+
+@media (max-width: 768px) {
+    .grid {
+        gap: var(--spacing-8);
+    }
+}

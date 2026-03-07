@@ -1,0 +1,138 @@
+.header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--spacing-16);
+}
+
+.title {
+    margin-bottom: var(--spacing-4);
+}
+
+.subtitle {
+    color: var(--color-text-light);
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-8);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.imageWrapper {
+    position: relative;
+    aspect-ratio: 4/5;
+    overflow: hidden;
+    border-radius: 2px;
+    margin-bottom: var(--spacing-6);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.viewMore {
+    color: white;
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.85rem;
+    border: 1px solid white;
+    padding: 0.8rem 1.5rem;
+    transform: translateY(10px);
+    transition: transform var(--transition-normal);
+}
+
+.card:hover .image {
+    transform: scale(1.05);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.card:hover .viewMore {
+    transform: translateY(0);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-2);
+}
+
+.cardTitle a {
+    transition: color var(--transition-fast);
+}
+
+.cardTitle a:hover {
+    color: var(--color-primary);
+}
+
+.cardDesc {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-4);
+    flex-grow: 1;
+}
+
+.link {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    align-self: flex-start;
+    padding-bottom: 4px;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background: var(--color-text);
+    transition: width var(--transition-normal);
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-12);
+    }
+}
