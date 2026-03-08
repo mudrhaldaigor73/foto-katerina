@@ -25,6 +25,7 @@ export default function Navbar() {
         { name: 'Služby', path: '/#sluzby' },
         { name: 'Portfolio', path: '/portfolio' },
         { name: 'O mně', path: '/o-mne' },
+        { name: 'Ceník', path: '/cenik' },
         { name: 'Blog', path: '/blog' },
         { name: 'Kontakt', path: '/kontakt' },
     ];

@@ -8,11 +8,11 @@ export default function About() {
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>
 
                         <div style={{ flex: '1 1 400px', position: 'relative' }}>
-                            <div style={{ position: 'absolute', top: '-1rem', left: '-1rem', width: '100%', height: '100%', border: '2px solid var(--color-primary)', zIndex: '-1' }}></div>
+                            <div style={{ position: 'absolute', top: '-1rem', left: '-1rem', width: '100%', height: '100%', border: '2px solid var(--color-primary)', borderRadius: '24px', zIndex: '-1' }}></div>
                             <img
-                                src="https://images.unsplash.com/photo-1554046920-90dc5fdbfb82?auto=format&fit=crop&q=80&w=800"
+                                src="/images/Katerina.webp"
                                 alt="Fotografka Kateřina před objektivem"
-                                style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', aspectRatio: '3/4' }}
+                                style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', aspectRatio: '3/4', borderRadius: '24px' }}
                             />
                         </div>
 

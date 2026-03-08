@@ -30,13 +30,16 @@
 .select {
     width: 100%;
     padding: 0.8rem 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Světlejší obrýsovka pro tmavý mód */
+    background: rgba(255, 255, 255, 0.05);
+    /* Jemně průhledné pozadí místo bílé */
     font-family: var(--font-body);
     font-size: 1rem;
     color: var(--color-text);
     transition: all var(--transition-fast);
-    border-radius: 2px;
+    border-radius: 12px;
+    /* Skutečné zaoblení rohů */
 }
 
 .input:focus,
@@ -70,8 +73,8 @@
 .successMessage {
     text-align: center;
     padding: var(--spacing-12);
-    background: var(--color-primary-light);
-    border-radius: 2px;
+    background: var(--color-surface);
+    border-radius: 12px;
 }
 
 .successMessage h3 {

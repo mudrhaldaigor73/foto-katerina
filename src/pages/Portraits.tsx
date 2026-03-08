@@ -20,16 +20,16 @@ export default function Portraits() {
                 ctaLink="/rezervace"
             />
 
-            <section className="section" style={{ backgroundColor: '#fdfdfc' }}>
+            <section className="section" style={{ backgroundColor: 'var(--color-surface)' }}>
                 <div className="container">
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
-                        <div style={{ padding: '2rem', backgroundColor: 'white', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 5px 20px rgba(0,0,0,0.02)' }}>
+                        <div style={{ padding: '2rem', backgroundColor: 'var(--color-background)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '12px' }}>
                             <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Rodina a děti</h3>
                             <p style={{ color: 'var(--color-text-light)', lineHeight: 1.8 }}>
                                 Zachyťme vaši rodinu přesně takovou, jaká je. Bez krkolomných póz – jen vaši vzájemnou radost, divokost vašich dětí a láskyplná objetí. Ideálně na louce při západu slunce nebo uprostřed vašeho domova.
                             </p>
                         </div>
-                        <div style={{ padding: '2rem', backgroundColor: 'white', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 5px 20px rgba(0,0,0,0.02)' }}>
+                        <div style={{ padding: '2rem', backgroundColor: 'var(--color-background)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '12px' }}>
                             <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>Ženský portrét</h3>
                             <p style={{ color: 'var(--color-text-light)', lineHeight: 1.8 }}>
                                 Dovolte si zářit. Jemný lifestylový portrét plný sebelásky oslaví vaši přirozenou krásu. Věřte mi, že se najdeme v té správné poloze, abyste na fotky byla náležitě pyšná.

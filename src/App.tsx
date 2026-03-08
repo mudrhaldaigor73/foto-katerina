@@ -9,6 +9,7 @@ import Newborn from './pages/Newborn';
 import Maternity from './pages/Maternity';
 import Contact from './pages/Contact';
 import Booking from './pages/Booking';
+import Pricing from './pages/Pricing';
 
 const TemporaryComponent = ({ title }: { title: string }) => (
   <div className="animate-fade-in"><section className="section"><div className="container" style={{ textAlign: 'center', paddingTop: '100px' }}><h1>{title}</h1><p>Stránka se připravuje</p></div></section></div>
@@ -32,6 +33,7 @@ function App() {
           <Route path="/blog" element={<TemporaryComponent title="Blog" />} />
           <Route path="/kontakt" element={<Contact />} />
           <Route path="/rezervace" element={<Booking />} />
+          <Route path="/cenik" element={<Pricing />} />
 
           <Route path="*" element={<Home />} />
         </Routes>

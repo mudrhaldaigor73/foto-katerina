@@ -17,7 +17,7 @@ export default function Newborn() {
                 image="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=1920"
             />
 
-            <section className="section" style={{ backgroundColor: '#fdfdfc' }}>
+            <section className="section" style={{ backgroundColor: 'var(--color-surface)' }}>
                 <div className="container" style={{ maxWidth: '800px', textAlign: 'center' }}>
                     <h2 style={{ marginBottom: '1.5rem', fontSize: '2.5rem' }}>Bezpečí a pohodlí na prvním místě</h2>
                     <p style={{ fontSize: '1.1rem', color: 'var(--color-text-light)', marginBottom: '3rem' }}>
@@ -44,7 +44,7 @@ export default function Newborn() {
                 </div>
             </section>
 
-            <section className="section" style={{ backgroundColor: 'var(--color-text)', color: 'white', textAlign: 'center' }}>
+            <section className="section" style={{ backgroundColor: 'var(--color-surface)', textAlign: 'center' }}>
                 <div className="container">
                     <h2 style={{ color: 'white', marginBottom: '1.5rem' }}>Zachyťme společně tento zázrak</h2>
                     <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>

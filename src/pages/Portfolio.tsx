@@ -2,15 +2,26 @@ import Gallery, { type GalleryImage } from '../components/gallery/Gallery';
 
 // Sample data for the portfolio
 const portfolioImages: GalleryImage[] = [
-    { id: '1', category: 'novorozenci', url: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=800', alt: 'Spící novorozenec' },
-    { id: '2', category: 'svatby', url: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=800', alt: 'Svatební pár přirozeně' },
-    { id: '3', category: 'tehotenstvi', url: 'https://images.unsplash.com/photo-1510006851064-e6056cd0e3a8?auto=format&fit=crop&q=80&w=800', alt: 'Těhotenská silueta v přírodě' },
-    { id: '4', category: 'portrety', url: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800', alt: 'Rozevlátá jarní rodina' },
-    { id: '5', category: 'svatby', url: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=800', alt: 'První polibek svatba' },
-    { id: '6', category: 'novorozenci', url: 'https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&q=80&w=800', alt: 'Novorozenec detail ručičky' },
-    { id: '7', category: 'portrety', url: 'https://images.unsplash.com/photo-1609220136736-443140cffec6?auto=format&fit=crop&q=80&w=800', alt: 'Matka a dítě smích' },
-    { id: '8', category: 'tehotenstvi', url: 'https://images.unsplash.com/photo-1528699633788-424224dc89b5?auto=format&fit=crop&q=80&w=800', alt: 'Těhotná s partnerem' },
-    { id: '9', category: 'svatby', url: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&q=80&w=800', alt: 'Nevěsta detail šaty' },
+    { id: '1', category: 'novorozenci', url: '/images/newborn a spánek.webp', alt: 'Spící novorozenec' },
+    { id: '2', category: 'novorozenci', url: '/images/newborn a ruce.webp', alt: 'Novorozenec detail ručičky' },
+
+    // Nové portréty a rodina
+    { id: 'p0_new', category: 'portrety', url: '/images/portret starší muž.jpg', alt: 'Portrét staršího muže' },
+    { id: 'p1_new', category: 'portrety', url: '/images/Vánoce.webp', alt: 'Vánoce rodina' },
+    { id: 'p2_new', category: 'portrety', url: '/images/žena a pes.webp', alt: 'Žena a pes' },
+    { id: 'p3_new', category: 'portrety', url: '/images/žena s koněm.webp', alt: 'Žena s koněm' },
+    { id: 'p4_new', category: 'portrety', url: '/images/zena kocka.webp', alt: 'Žena a kočka' },
+    { id: 'p5_new', category: 'portrety', url: '/images/sourozenci.webp', alt: 'Sourozenci' },
+    { id: 'p6_new', category: 'portrety', url: '/images/žena u okna.webp', alt: 'Žena u okna' },
+    { id: 'p7_new', category: 'portrety', url: '/images/portret.webp', alt: 'Portrét' },
+    { id: 'p8_new', category: 'portrety', url: '/images/pár u moře.webp', alt: 'Pár u moře' },
+    { id: 'p9_new', category: 'portrety', url: '/images/holka a sofa.webp', alt: 'Holka a sofa' },
+    { id: 'p10_new', category: 'portrety', url: '/images/chlapec se spsem.webp', alt: 'Chlapec se psem' },
+
+    // Zbytkové kategorie (zatím)
+    { id: 's1', category: 'svatby', url: '/images/svatba.webp', alt: 'Svatba' },
+    { id: 't1', category: 'tehotenstvi', url: '/images/tehotenstvi.webp', alt: 'Těhotenství' },
+    { id: '11', category: 'svatby', url: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=800', alt: 'Svatební pár přirozeně' }
 ];
 
 const galleryCategories = [

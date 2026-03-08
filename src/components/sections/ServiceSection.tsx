@@ -14,14 +14,14 @@ const services: ServiceItem[] = [
         id: 'novorozenci',
         title: 'Novorozenci',
         description: 'Jemné, bezpečné a emotivní zachycení prvních dnů života vašeho miminka v pohodlí domova nebo ateliéru.',
-        image: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=800',
+        image: '/images/newborn-uvod.webp',
         link: '/novorozenci'
     },
     {
         id: 'tehotenstvi',
         title: 'Těhotenství',
         description: 'Elegantní oslava nového života. Odhalte krásu a sílu očekávání prostřednictvím nadčasových fotografií.',
-        image: 'https://images.unsplash.com/photo-1510006851064-e6056cd0e3a8?auto=format&fit=crop&q=80&w=800',
+        image: '/images/tehotenstvi.webp',
         link: '/tehotenstvi'
     },
     {
@@ -35,7 +35,7 @@ const services: ServiceItem[] = [
         id: 'portrety',
         title: 'Portréty a rodina',
         description: 'Přirozené lifestylové fotografie vaší rodiny plné radosti, smíchu a opravdového spojení.',
-        image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800',
+        image: '/images/portret.webp',
         link: '/portrety'
     }
 ];

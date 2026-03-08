@@ -6,8 +6,8 @@ export default function Home() {
         <div className="animate-fade-in">
             <Hero
                 title="Přirozená elegance & čisté emoce"
-                subtitle="Zachycuji krásu jedinečných okamžiků vašeho života v jemném a luxusním stylu."
-                image="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80&w=1920"
+                subtitle="Zachycuji jedinečné okamžiky s profesionálním přístupem a kreativním pohledem."
+                image="/images/Katerina-hero.webp"
                 ctaText="Prozkoumat portfolio"
                 ctaLink="/portfolio"
             />
@@ -25,7 +25,7 @@ export default function Home() {
 
             {/* Featured Gallery placeholder */}
 
-            <section className="section" style={{ backgroundColor: '#fdfdfc' }}>
+            <section className="section" style={{ backgroundColor: 'var(--color-surface)' }}>
                 <div className="container" style={{ textAlign: 'center' }}>
                     <h2 style={{ marginBottom: '2rem' }}>Chcete se o mně dozvědět více?</h2>
                     <a href="/o-mne" className="btn btn-outline">Můj příběh</a>

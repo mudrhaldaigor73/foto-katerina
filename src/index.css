@@ -2,18 +2,25 @@
 
 :root {
   /* Colors */
-  --color-primary: #dcbca3;      /* Soft warm taupe */
-  --color-primary-light: #f5ede6;
-  --color-secondary: #c9d6d3;    /* Sage green */
-  --color-text: #2c2c2c;         /* Soft black/charcoal */
-  --color-text-light: #6e6e6e;   /* Medium gray */
-  --color-background: #fdfdfc;   /* Almost white */
-  --color-surface: #ffffff;      
-  
+  --color-primary: #dcbca3;
+  /* Soft warm taupe */
+  --color-primary-light: #1c1c1c;
+  /* Tmavší podklad pod sekce */
+  --color-secondary: #c9d6d3;
+  /* Sage green */
+  --color-text: #ffffff;
+  /* Čistě bílý text */
+  --color-text-light: #a3a3a3;
+  /* Jemnější šedý text pro odstavce */
+  --color-background: #0a0a0a;
+  /* Temné pozadí (téměř černá) */
+  --color-surface: #121212;
+  /* Mírně světlejší tmavá pro karty/prvky */
+
   /* Typography */
   --font-heading: 'Cormorant Garamond', serif;
   --font-body: 'Jost', sans-serif;
-  
+
   /* Spacing */
   --spacing-1: 0.25rem;
   --spacing-2: 0.5rem;
@@ -29,7 +36,7 @@
   --transition-fast: 0.2s ease-in-out;
   --transition-normal: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   /* Layout */
   --container-width: 1280px;
   --container-padding: 2rem;
@@ -56,7 +63,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 500;
   line-height: 1.2;
@@ -93,6 +105,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  border-radius: 12px;
+  /* Zaoblení rohů všech fotografií */
 }
 
 .container {
@@ -118,22 +132,25 @@ img {
   justify-content: center;
   padding: 1rem 2rem;
   font-family: var(--font-body);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  border: none;
+  border: 1px solid var(--color-text);
   cursor: pointer;
   transition: all var(--transition-normal);
   background: var(--color-text);
-  color: var(--color-surface);
-  border-radius: 2px;
+  color: var(--color-background);
+  /* Černý text na bílém podkladu */
+  border-radius: 24px;
+  /* Plné zaoblení (pill shape) */
 }
 
 .btn:hover {
-  background: var(--color-primary);
+  background: transparent;
+  color: var(--color-text);
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.05);
 }
 
 .btn-outline {
@@ -144,13 +161,20 @@ img {
 
 .btn-outline:hover {
   background: var(--color-text);
-  color: var(--color-surface);
+  color: var(--color-background);
 }
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
@@ -161,7 +185,16 @@ img {
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .hide-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+@media (max-width: 600px) {
+  .dotted-line {
+    display: none !important;
+  }
 }

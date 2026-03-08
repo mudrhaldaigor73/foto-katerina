@@ -38,7 +38,7 @@ export default function Maternity() {
                 </div>
             </section>
 
-            <section className="section" style={{ backgroundColor: '#fdfdfc' }}>
+            <section className="section" style={{ backgroundColor: 'var(--color-surface)' }}>
                 <div className="container">
                     <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Galerie</h2>
                     <Gallery images={maternityImages} />

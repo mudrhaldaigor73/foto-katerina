@@ -70,43 +70,10 @@
     transition: transform var(--transition-slow);
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(253, 253, 252, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity var(--transition-normal);
-}
-
 .item:hover .image {
-    transform: scale(1.05);
-}
-
-.item:hover .overlay {
-    opacity: 1;
-}
-
-.overlay span {
-    font-family: var(--font-body);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 0.85rem;
-    color: var(--color-text);
-    background: white;
-    padding: 0.6rem 1.2rem;
-    border-radius: 2px;
-    transform: translateY(10px);
-    transition: transform var(--transition-normal);
-}
-
-.item:hover .overlay span {
-    transform: translateY(0);
+    transform: scale(1.03);
+    /* Malé a plynulé zvětšení obrázku (původně 1.05) pro luxusnější pocit */
+    /* Overlay je kompletně odstraněn - fotka zůstává čistá a ostrá bez bílých bloků */
 }
 
 @media (max-width: 768px) {

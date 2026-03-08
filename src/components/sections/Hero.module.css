@@ -32,7 +32,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(253, 253, 252, 0.2), rgba(253, 253, 252, 0.8));
+    /* Odstraněno plošné zesvětlení - ponechán pouze velmi jemný černý stín odspoda pro lepší čitelnost textů */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.6) 100%);
 }
 
 .content {
@@ -43,12 +44,15 @@
 
 .textWrap {
     max-width: 800px;
+    margin-top: 200px;
+    /* Posunutí celého bloku do dolní části (celkem 200px) */
 }
 
 .title {
     color: var(--color-text);
-    margin-bottom: var(--spacing-4);
-    font-size: clamp(3rem, 6vw, 5rem);
+    margin-bottom: var(--spacing-2);
+    font-size: 40px;
+    /* Zvětšeno na požadovaných 40px */
 }
 
 .subtitle {
