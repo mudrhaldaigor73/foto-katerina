@@ -4,6 +4,10 @@ import Gallery, { type GalleryImage } from '../components/gallery/Gallery';
 const portfolioImages: GalleryImage[] = [
     { id: '1', category: 'novorozenci', url: '/images/newborn a spánek.webp', alt: 'Spící novorozenec' },
     { id: '2', category: 'novorozenci', url: '/images/newborn a ruce.webp', alt: 'Novorozenec detail ručičky' },
+    { id: '3', category: 'novorozenci', url: '/images/newborn-brezen2026-019.webp', alt: 'Novorozenecké focení' },
+    { id: '4', category: 'novorozenci', url: '/images/newborn-srpen2025-003.webp', alt: 'Novorozenecké focení' },
+    { id: '5', category: 'novorozenci', url: '/images/newborn-rijen2025-044.webp', alt: 'Novorozenecké focení' },
+    { id: '6', category: 'novorozenci', url: '/images/newborn-leden2026-015.webp', alt: 'Novorozenecké focení' },
 
     // Nové portréty a rodina
     { id: 'p0_new', category: 'portrety', url: '/images/portret starší muž.jpg', alt: 'Portrét staršího muže' },
