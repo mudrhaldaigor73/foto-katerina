@@ -7,9 +7,11 @@ interface HeroProps {
     image: string;
     ctaText?: string;
     ctaLink?: string;
+    textColor?: string;
+    textMarginTop?: number;
 }
 
-export default function Hero({ title, subtitle, image, ctaText, ctaLink }: HeroProps) {
+export default function Hero({ title, subtitle, image, ctaText, ctaLink, textColor, textMarginTop }: HeroProps) {
     return (
         <section className={styles.hero}>
             <div className={styles.imageContainer}>
@@ -18,9 +20,9 @@ export default function Hero({ title, subtitle, image, ctaText, ctaLink }: HeroP
             </div>
 
             <div className={`container ${styles.content}`}>
-                <div className={styles.textWrap}>
-                    <h1 className={`${styles.title} animate-fade-in`}>{title}</h1>
-                    {subtitle && <p className={`${styles.subtitle} animate-fade-in`} style={{ animationDelay: '0.2s' }}>{subtitle}</p>}
+                <div className={styles.textWrap} style={textMarginTop !== undefined ? { marginTop: textMarginTop } : undefined}>
+                    <h1 className={`${styles.title} animate-fade-in`} style={textColor ? { color: textColor } : undefined}>{title}</h1>
+                    {subtitle && <p className={`${styles.subtitle} animate-fade-in`} style={{ animationDelay: '0.2s', ...(textColor ? { color: textColor } : {}) }}>{subtitle}</p>}
 
                     {ctaText && ctaLink && (
                         <div className={`animate-fade-in`} style={{ animationDelay: '0.4s' }}>

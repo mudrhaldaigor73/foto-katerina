@@ -3,9 +3,14 @@ import Gallery from '../components/gallery/Gallery';
 import { Link } from 'react-router-dom';
 
 const newbornImages = [
-    { id: 'n1', category: 'novorozenci', url: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=800', alt: 'Spící miminko' },
-    { id: 'n2', category: 'novorozenci', url: 'https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&q=80&w=800', alt: 'Miminko detail' },
-    { id: 'n3', category: 'novorozenci', url: 'https://images.unsplash.com/photo-1514454794747-d3527b1eb213?auto=format&fit=crop&q=80&w=800', alt: 'Maminka s novorozencem' },
+    { id: 'n1', category: 'novorozenci', url: '/images/newborn-brezen2026-016.webp', alt: 'Novorozenecké focení' },
+    { id: 'n2', category: 'novorozenci', url: '/images/newborn-brezen2026-027.webp', alt: 'Novorozenecké focení' },
+    { id: 'n3', category: 'novorozenci', url: '/images/newborn-cerven2025-004.webp', alt: 'Novorozenecké focení' },
+    { id: 'n4', category: 'novorozenci', url: '/images/newborn-kveten2025-016.webp', alt: 'Novorozenecké focení' },
+    { id: 'n5', category: 'novorozenci', url: '/images/newborn-rijen2025-044.webp', alt: 'Novorozenecké focení' },
+    { id: 'n6', category: 'novorozenci', url: '/images/newborn-srpen2025-003.webp', alt: 'Novorozenecké focení' },
+    { id: 'n7', category: 'novorozenci', url: '/images/newborn-zari2025-018.webp', alt: 'Novorozenecké focení' },
+    { id: 'n8', category: 'novorozenci', url: '/images/newborn-leden2026-015.webp', alt: 'Novorozenecké focení' },
 ];
 
 export default function Newborn() {
@@ -14,7 +19,9 @@ export default function Newborn() {
             <Hero
                 title="Novorozenecké focení"
                 subtitle="Čistota, jemnost a bezpečnost. Ty nejkrásnější první momenty s vaším děťátkem."
-                image="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=1920"
+                image="/images/newborn-unor2026-009.webp"
+                textColor="#121212"
+                textMarginTop={300}
             />
 
             <section className="section" style={{ backgroundColor: 'var(--color-surface)' }}>
@@ -27,7 +34,7 @@ export default function Newborn() {
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', textAlign: 'left', marginTop: '3rem' }}>
                         <div style={{ padding: '1.5rem', backgroundColor: 'var(--color-primary-light)' }}>
                             <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>Cena focení</h3>
-                            <p style={{ color: 'var(--color-text-light)', fontSize: '0.95rem' }}>Cena za jednu upravenou fotografii v elektronické podobě je <strong>140 Kč</strong>. Cestovné mimo okolí Valašského Meziříčí činí 8 Kč/km.</p>
+                            <p style={{ color: 'var(--color-text-light)', fontSize: '0.95rem' }}>Cena za jednu upravenou fotografii v elektronické podobě je <strong>250 Kč</strong>. Cestovné mimo okolí Valašského Meziříčí činí 8 Kč/km.</p>
                         </div>
                         <div style={{ padding: '1.5rem', backgroundColor: 'var(--color-primary-light)' }}>
                             <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>Kdy fotit?</h3>

@@ -13,7 +13,7 @@ const pricingItems = [
     },
     {
         title: 'Newborn fotografie',
-        price: '140 Kč',
+        price: '250 Kč',
         description: 'cena za jednu upravenou fotografii v elektronické podobě'
     },
     {
