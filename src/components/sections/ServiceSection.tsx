@@ -28,7 +28,7 @@ const services: ServiceItem[] = [
         id: 'svatby',
         title: 'Svatby',
         description: 'Váš příběh lásky vyprávěný skrze autentické momenty. Od ranních příprav až po večerní oslavu.',
-        image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=800',
+        image: '/images/kniha-prsteny1.webp',
         link: '/svatby'
     },
     {

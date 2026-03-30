@@ -2,11 +2,11 @@ import Hero from '../components/sections/Hero';
 import Gallery from '../components/gallery/Gallery';
 import { Link } from 'react-router-dom';
 
-const weddingImages = [
-    { id: 'w1', category: 'svatby', url: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=800', alt: 'Svatební pár při západu slunce' },
-    { id: 'w2', category: 'svatby', url: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=800', alt: 'Novomanželé detail spojení rukou' },
-    { id: 'w3', category: 'svatby', url: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&q=80&w=800', alt: 'Krásná nevěsta' },
-    { id: 'w4', category: 'svatby', url: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800', alt: 'Svatební hostina detail' },
+const weddingImages: { id: string; category: string; url: string; alt: string }[] = [
+    { id: 'w1', category: 'svatby', url: '/images/kniha-prsten1.webp', alt: 'Kniha a prsten' },
+    { id: 'w2', category: 'svatby', url: '/images/svatebni-stul.webp', alt: 'Svatební stůl' },
+    { id: 'w3', category: 'svatby', url: '/images/dekorace-svatba.webp', alt: 'Svatební dekorace' },
+    { id: 'w4', category: 'svatby', url: '/images/kniha-prsteny2.webp', alt: 'Kniha a prsteny' },
 ];
 
 export default function Wedding() {

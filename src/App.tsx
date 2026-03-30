@@ -7,6 +7,7 @@ import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Newborn from './pages/Newborn';
 import Maternity from './pages/Maternity';
+import Wedding from './pages/Wedding';
 import Contact from './pages/Contact';
 import Booking from './pages/Booking';
 import Pricing from './pages/Pricing';
@@ -27,7 +28,7 @@ function App() {
           <Route path="/novorozenci" element={<Newborn />} />
           <Route path="/tehotenstvi" element={<Maternity />} />
 
-          <Route path="/svatby" element={<TemporaryComponent title="Svatební focení" />} />
+          <Route path="/svatby" element={<Wedding />} />
           <Route path="/portrety" element={<TemporaryComponent title="Portréty a rodina" />} />
 
           <Route path="/blog" element={<TemporaryComponent title="Blog" />} />

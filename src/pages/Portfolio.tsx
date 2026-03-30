@@ -23,9 +23,15 @@ const portfolioImages: GalleryImage[] = [
     { id: 'p10_new', category: 'portrety', url: '/images/chlapec se spsem.webp', alt: 'Chlapec se psem' },
 
     // Zbytkové kategorie (zatím)
-    { id: 's1', category: 'svatby', url: '/images/svatba.webp', alt: 'Svatba' },
+    { id: 's1', category: 'svatby', url: '/images/kniha-prsten1.webp', alt: 'Kniha a prsten' },
+    { id: 's2', category: 'svatby', url: '/images/svatba.webp', alt: 'Svatba' },
+    { id: 's3', category: 'svatby', url: '/images/svatebni-stul.webp', alt: 'Svatební stůl' },
+    { id: 's4', category: 'svatby', url: '/images/kniha-prsteny2.webp', alt: 'Kniha a prsteny' },
+    { id: 's5', category: 'svatby', url: '/images/dekorace-svatba.webp', alt: 'Svatební dekorace' },
     { id: 't1', category: 'tehotenstvi', url: '/images/tehotenstvi.webp', alt: 'Těhotenství' },
-    { id: '11', category: 'svatby', url: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=800', alt: 'Svatební pár přirozeně' }
+    { id: 't2', category: 'tehotenstvi', url: '/images/berczik1.webp', alt: 'Těhotenské focení' },
+    { id: 't3', category: 'tehotenstvi', url: '/images/berczik3.webp', alt: 'Těhotenské focení' },
+    { id: 't4', category: 'tehotenstvi', url: '/images/berzcik2.webp', alt: 'Těhotenské focení' },
 ];
 
 const galleryCategories = [
