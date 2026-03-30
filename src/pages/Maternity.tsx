@@ -3,9 +3,9 @@ import Gallery from '../components/gallery/Gallery';
 import { Link } from 'react-router-dom';
 
 const maternityImages = [
-    { id: 'm1', category: 'tehotenstvi', url: 'https://images.unsplash.com/photo-1510006851064-e6056cd0e3a8?auto=format&fit=crop&q=80&w=800', alt: 'Těhotná žena v přírodě' },
-    { id: 'm2', category: 'tehotenstvi', url: 'https://images.unsplash.com/photo-1528699633788-424224dc89b5?auto=format&fit=crop&q=80&w=800', alt: 'Pár v očekávání' },
-    { id: 'm3', category: 'tehotenstvi', url: 'https://images.unsplash.com/photo-1473280144955-46fd1b7ff9c6?auto=format&fit=crop&q=80&w=800', alt: 'Těhotenství silueta' },
+    { id: 'm1', category: 'tehotenstvi', url: '/images/berczik1.webp', alt: 'Těhotenské focení' },
+    { id: 'm2', category: 'tehotenstvi', url: '/images/berzcik2.webp', alt: 'Těhotenské focení' },
+    { id: 'm3', category: 'tehotenstvi', url: '/images/berczik3.webp', alt: 'Těhotenské focení' },
 ];
 
 export default function Maternity() {
@@ -14,7 +14,7 @@ export default function Maternity() {
             <Hero
                 title="Těhotenské focení"
                 subtitle="Oslava nového života. Elegantní a nadčasové fotografie vašeho očekávání."
-                image="https://images.unsplash.com/photo-1528699633788-424224dc89b5?auto=format&fit=crop&q=80&w=1920"
+                image="/images/tehotenstvi.webp"
             />
 
             <section className="section">
