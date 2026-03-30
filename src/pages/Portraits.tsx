@@ -36,7 +36,7 @@ export default function Portraits() {
                             </p>
                         </div>
                         <div style={{ gridColumn: '1 / -1', padding: '1.5rem', backgroundColor: 'var(--color-primary-light)', borderLeft: '4px solid var(--color-primary)' }}>
-                            <strong>Cena za portrétní i rodinné focení:</strong> 140 Kč za jednu upravenou fotografii v elektronické podobě.
+                            <strong>Cena za portrétní i rodinné focení:</strong> 250 Kč za jednu upravenou fotografii v elektronické podobě.
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Mail, MapPin, Camera } from 'lucide-react';
+import { Mail, MapPin, Camera } from 'lucide-react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -16,10 +16,6 @@ export default function Footer() {
                     <p className={styles.text}>
                         Zachycujeme ty nejkrásnější momenty vašeho života. Od jemných novorozeneckých snímků po emotivní svatební příběhy.
                     </p>
-                    <div className={styles.socials}>
-                        <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={20} /></a>
-                        <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"><Facebook size={20} /></a>
-                    </div>
                 </div>
 
                 {/* Links */}
@@ -62,7 +58,7 @@ export default function Footer() {
 
             <div className={styles.bottom}>
                 <div className="container">
-                    <p>&copy; {new Date().getFullYear()} Foto Kateřina. Všechna práva vyhrazena.</p>
+                    <p>&copy; 2026 HaldaVisuals.eu Všechna práva vyhrazena.</p>
                 </div>
             </div>
         </footer>

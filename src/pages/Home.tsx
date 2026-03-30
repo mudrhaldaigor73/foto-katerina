@@ -15,7 +15,7 @@ export default function Home() {
             <section className="section" style={{ backgroundColor: 'var(--color-primary-light)' }}>
                 <div className="container" style={{ textAlign: 'center', maxWidth: '800px' }}>
                     <h2 style={{ marginBottom: '1.5rem', fontSize: '2.5rem' }}>Vítejte ve světě mých příběhů</h2>
-                    <p style={{ fontSize: '1.1rem', color: 'var(--color-text-light)' }}>
+                    <p style={{ fontSize: '20px', color: 'var(--color-text-light)' }}>
                         Jmenuji se Kateřina Haldová a mám přes 8 let zkušeností v oblasti lifestylové, rodinné a svatební fotografie. Zachycuji přirozené světlo, vaše skutečné emoce a příběhy přesně takové, jaké jsou.
                     </p>
                 </div>

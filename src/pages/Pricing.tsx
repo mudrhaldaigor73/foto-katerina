@@ -3,12 +3,12 @@ import Hero from '../components/sections/Hero';
 const pricingItems = [
     {
         title: 'Portrétní fotografie',
-        price: '140 Kč',
+        price: '250 Kč',
         description: 'cena za jednu upravenou fotografii v elektronické podobě'
     },
     {
         title: 'Těhotenské fotografie',
-        price: '140 Kč',
+        price: '250 Kč',
         description: 'cena za jednu upravenou fotografii v elektronické podobě'
     },
     {

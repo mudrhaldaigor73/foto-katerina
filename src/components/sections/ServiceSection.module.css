@@ -11,6 +11,7 @@
 .subtitle {
     color: var(--color-text-light);
     margin: 0 auto;
+    font-size: 20px;
 }
 
 .grid {

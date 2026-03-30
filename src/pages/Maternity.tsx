@@ -28,12 +28,9 @@ export default function Maternity() {
                             Fotíme nejraději venku v přírodě při západu slunce nebo v pohodlí vašeho domova. Důraz kladu na propojení obou partnerů a přirozené láskyplné emoce mezi vámi.
                         </p>
                         <div style={{ backgroundColor: 'var(--color-primary-light)', padding: '1.5rem', borderLeft: '4px solid var(--color-primary)' }}>
-                            <strong style={{ display: 'block', marginBottom: '0.5rem' }}>Cena:</strong> 140 Kč za jednu upravenou fotografii v elektronické podobě.<br />
+                            <strong style={{ display: 'block', marginBottom: '0.5rem' }}>Cena:</strong> 250 Kč za jednu upravenou fotografii v elektronické podobě.<br />
                             <strong style={{ display: 'block', marginTop: '0.5rem', marginBottom: '0.5rem' }}>Ideální čas na focení:</strong> Mezi 28. a 34. týdnem těhotenství.
                         </div>
-                    </div>
-                    <div style={{ flex: '1 1 400px' }}>
-                        <img src="https://images.unsplash.com/photo-1473280144955-46fd1b7ff9c6?auto=format&fit=crop&q=80&w=800" alt="Emotivní těhotenská fotografie" style={{ width: '100%', height: 'auto', borderRadius: '4px' }} />
                     </div>
                 </div>
             </section>
