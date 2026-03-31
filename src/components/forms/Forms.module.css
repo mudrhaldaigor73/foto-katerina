@@ -82,6 +82,10 @@
     margin-bottom: var(--spacing-2);
 }
 
+.successMessage p {
+    margin: 0 auto;
+}
+
 @media (max-width: 600px) {
     .grid {
         grid-template-columns: 1fr;
