@@ -1,5 +1,5 @@
 import ContactForm from '../components/forms/ContactForm';
-import { Mail, Phone, MapPin, Instagram, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook } from 'lucide-react';
 
 export default function Contact() {
     return (
@@ -45,10 +45,7 @@ export default function Contact() {
 
                             <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Sledujte mě</h3>
                             <div style={{ display: 'flex', gap: '1rem' }}>
-                                <a href="https://instagram.com" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '45px', height: '45px', borderRadius: '50%', border: '1px solid rgba(0,0,0,0.1)', transition: 'all 0.3s' }}>
-                                    <Instagram />
-                                </a>
-                                <a href="https://facebook.com" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '45px', height: '45px', borderRadius: '50%', border: '1px solid rgba(0,0,0,0.1)', transition: 'all 0.3s' }}>
+                                <a href="https://www.facebook.com/p/Mimilens-61575723786095/" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '45px', height: '45px', borderRadius: '50%', border: '1px solid rgba(0,0,0,0.1)', transition: 'all 0.3s' }}>
                                     <Facebook />
                                 </a>
                             </div>
