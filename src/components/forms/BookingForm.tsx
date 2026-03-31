@@ -14,9 +14,15 @@ export default function BookingForm() {
     const { register, handleSubmit, formState: { errors, isSubmitting, isSubmitSuccessful } } = useForm<BookingFormData>();
 
     const onSubmit = async (data: BookingFormData) => {
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        console.log(data);
+        await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                access_key: 'c3a99a9a-28ba-4ed4-a45a-7c92c41f5a9b',
+                subject: 'Nová žádost o rezervaci',
+                ...data,
+            }),
+        });
     };
 
     if (isSubmitSuccessful) {
