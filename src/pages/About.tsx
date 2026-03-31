@@ -30,7 +30,7 @@ export default function About() {
                                     Cílem každého mého focení je zachytit jedinečné okamžiky, které si budete chtít uchovat navždy. Osobní a profesionální přístup, smysl pro detail a ovládání moderní postprodukce (Lightroom/Photoshop) mi pomáhá vytvářet stylové vzpomínky s přesnou kompozicí i hrou světla a stínu.
                                 </p>
                                 <p>
-                                    V současnosti se hodně věnuji také focení novorozenců v projektu rodinné porodnice v Nemocnici AGEL Valašské Meziříčí (Mimilens.cz). Můj rukopis je minimalistický, autentický a emotivní. Nesnažím se o dokonalé pózy, ale o upřímné radosti.
+                                    V současnosti se hodně věnuji také focení novorozenců v projektu rodinné porodnice v Nemocnici AGEL Valašské Meziříčí (Mimilens.cz). Můj rukopis je minimalistický, autentický a emotivní.
                                 </p>
                             </div>
 
