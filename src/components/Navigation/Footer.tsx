@@ -1,8 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Mail, MapPin, Camera } from 'lucide-react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
+    const location = useLocation();
+    const isBookingPage = location.pathname === '/rezervace';
+
     return (
         <footer className={styles.footer}>
             <div className={`container ${styles.grid}`}>
@@ -52,7 +55,7 @@ export default function Footer() {
                             <span>Valašské Meziříčí</span>
                         </li>
                     </ul>
-                    <Link to="/rezervace" className={`btn ${styles.bookBtn}`}>Rezervovat termín</Link>
+                    {!isBookingPage && <Link to="/rezervace" className={`btn ${styles.bookBtn}`}>Rezervovat termín</Link>}
                 </div>
             </div>
 
