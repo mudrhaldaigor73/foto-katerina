@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Gallery, { type GalleryImage } from '../components/gallery/Gallery';
 
 // Sample data for the portfolio
@@ -65,7 +66,7 @@ export default function Portfolio() {
                     <p style={{ marginBottom: '2rem', color: 'var(--color-text-light)' }}>
                         Napište mi a společně vymyslíme koncept pro vaše vysněné focení.
                     </p>
-                    <a href="/rezervace" className="btn">Rezervovat termín</a>
+                    <Link to="/rezervace" className="btn">Rezervovat termín</Link>
                 </div>
             </section>
         </div>

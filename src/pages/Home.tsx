@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Hero from '../components/sections/Hero';
 import ServiceSection from '../components/sections/ServiceSection';
 
@@ -28,7 +29,7 @@ export default function Home() {
             <section className="section" style={{ backgroundColor: 'var(--color-surface)' }}>
                 <div className="container" style={{ textAlign: 'center' }}>
                     <h2 style={{ marginBottom: '2rem' }}>Chcete se o mně dozvědět více?</h2>
-                    <a href="/o-mne" className="btn btn-outline">Můj příběh</a>
+                    <Link to="/o-mne" className="btn btn-outline">Můj příběh</Link>
                 </div>
             </section>
         </div>
