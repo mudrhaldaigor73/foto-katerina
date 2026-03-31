@@ -55,7 +55,7 @@ export default function Portraits() {
                     <p style={{ color: 'var(--color-text-light)', marginBottom: '2rem', maxWidth: '600px', margin: '1rem auto 2rem' }}>
                         "Nejsem fotogenická" slýchám u focení velmi často. Mým úkolem je ukázat vám, že to není pravda! Focení se mnou je procházkou plnou smíchu a důvěry. Pojďme to zkusit.
                     </p>
-                    <Link to="/kontakt" className="btn btn-outline">Spojme se</Link>
+                    <Link to="/kontakt" className="btn btn-outline">Napište mi</Link>
                 </div>
             </section>
         </div>

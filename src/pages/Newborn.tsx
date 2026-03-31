@@ -57,7 +57,7 @@ export default function Newborn() {
                     <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
                         Doporučuji rezervovat termín ještě během těhotenství podle předpokládaného data porodu.
                     </p>
-                    <Link to="/rezervace" className="btn" style={{ backgroundColor: 'white', color: '#121212', borderColor: 'white' }}>Rezervovat termín</Link>
+                    <Link to="/kontakt" className="btn" style={{ backgroundColor: 'white', color: '#121212', borderColor: 'white' }}>Napište mi</Link>
                 </div>
             </section>
         </div>

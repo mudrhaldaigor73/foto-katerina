@@ -66,7 +66,7 @@ export default function Portfolio() {
                     <p style={{ margin: '0 auto 2rem', color: 'var(--color-text-light)' }}>
                         Napište mi a společně vymyslíme koncept pro vaše vysněné focení.
                     </p>
-                    <Link to="/rezervace" className="btn">Rezervovat termín</Link>
+                    <Link to="/kontakt" className="btn">Napište mi</Link>
                 </div>
             </section>
         </div>

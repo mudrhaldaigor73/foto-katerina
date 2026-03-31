@@ -71,7 +71,7 @@ export default function Wedding() {
                 <div className="container">
                     <h2 style={{ marginBottom: '1.5rem' }}>Zajímá vás moje dostupnost pro váš den?</h2>
                     <p style={{ margin: '0 auto 2rem', color: 'var(--color-text-light)' }}>Napište mi a společně vymyslíme koncept pro vaše vysněné focení.</p>
-                    <Link to="/rezervace" className="btn">Poptat termín</Link>
+                    <Link to="/kontakt" className="btn">Napište mi</Link>
                 </div>
             </section>
         </div>
