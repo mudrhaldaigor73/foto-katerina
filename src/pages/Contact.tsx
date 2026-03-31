@@ -31,7 +31,7 @@ export default function Contact() {
                                     <Phone style={{ color: 'var(--color-primary)' }} />
                                     <div>
                                         <strong style={{ display: 'block', textTransform: 'uppercase', fontSize: '0.85rem' }}>Telefon</strong>
-                                        <a href="tel:+420722004554" style={{ color: 'var(--color-text-light)' }}>+420 722 004 554</a>
+                                        <a href="tel:+420777848118" style={{ color: 'var(--color-text-light)' }}>+420 777 848 118</a> <span style={{ color: 'var(--color-text-light)', fontSize: '0.85rem' }}>(jen SMS)</span>
                                     </div>
                                 </li>
                                 <li style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
