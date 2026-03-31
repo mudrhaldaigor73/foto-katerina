@@ -45,6 +45,7 @@ export default function Maternity() {
             <section className="section" style={{ textAlign: 'center' }}>
                 <div className="container">
                     <h2 style={{ marginBottom: '1.5rem' }}>Pojďme vytvořit krásné vzpomínky</h2>
+                    <p style={{ margin: '0 auto 2rem', color: 'var(--color-text-light)' }}>Napište mi a společně vymyslíme koncept pro vaše vysněné focení.</p>
                     <Link to="/rezervace" className="btn">Rezervovat termín</Link>
                 </div>
             </section>

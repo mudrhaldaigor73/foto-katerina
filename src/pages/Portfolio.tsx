@@ -63,7 +63,7 @@ export default function Portfolio() {
             <section className="section" style={{ backgroundColor: 'var(--color-primary-light)' }}>
                 <div className="container" style={{ textAlign: 'center' }}>
                     <h2 style={{ marginBottom: '1.5rem' }}>Líbí se vám můj styl?</h2>
-                    <p style={{ marginBottom: '2rem', color: 'var(--color-text-light)' }}>
+                    <p style={{ margin: '0 auto 2rem', color: 'var(--color-text-light)' }}>
                         Napište mi a společně vymyslíme koncept pro vaše vysněné focení.
                     </p>
                     <Link to="/rezervace" className="btn">Rezervovat termín</Link>
