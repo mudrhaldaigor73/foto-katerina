@@ -19,17 +19,17 @@ const pricingItems = [
     {
         title: 'Svatební fotografie - balíček 1',
         price: '6000 Kč',
-        description: '(do 3 hodin focení) obřad, společné focení po obřadu, portréty novomanželů cca 150 – 200 fotografií v elektronické podobě (digitální galerie, webgalerie) – základní editace, z toho dle výběru 15 retušovaných design fotografií'
+        description: '(do 3 hodin focení) obřad, společné focení po obřadu, portréty novomanželů cca 150 – 200 fotografií v elektronické podobě (digitální galerie, webgalerie) – základní editace, z toho dle výběru 15 retušovaných design fotografií + tisk 10 ks fotografií 13×18 cm, větší počet za příplatek (za každých dalších 10 ks 13×18 cm – +1 000 Kč k balíčku, fotografie 1 ks A3 – 500 Kč)'
     },
     {
         title: 'Svatební fotografie - balíček 2',
         price: '12000 Kč',
-        description: '(do 6 hodin focení) předobřadní příprava, obřad, společné focení po obřadu, hostina, portréty novomanželů cca 200 – 300 fotografií v elektronické podobě (digitální galerie, webgalerie) – základní editace, z toho dle výběru 25 retušovaných design fotografií'
+        description: '(do 6 hodin focení) předobřadní příprava, obřad, společné focení po obřadu, hostina, portréty novomanželů cca 200 – 300 fotografií v elektronické podobě (digitální galerie, webgalerie) – základní editace, z toho dle výběru 25 retušovaných design fotografií + tisk 20 ks fotografií 13×18 cm, větší počet za příplatek (za každých dalších 10 ks 13×18 cm – +1 000 Kč k balíčku, fotografie 1 ks A3 – 500 Kč)'
     },
     {
         title: 'Svatební fotografie - balíček 3',
         price: '16000 Kč',
-        description: '(do 11 hodin focení) přípravy, obřad, společné focení po obřadu, hostina, portréty novomanželů, začátek zábavy cca 400 – 500 fotografií v elektronické podobě (digitální galerie, webgalerie) – základní editace, z toho dle výběru 30 retušovaných design fotografií'
+        description: '(do 11 hodin focení) přípravy, obřad, společné focení po obřadu, hostina, portréty novomanželů, začátek zábavy cca 400 – 500 fotografií v elektronické podobě (digitální galerie, webgalerie) – základní editace, z toho dle výběru 30 retušovaných design fotografií + tisk 30 ks fotografií 13×18 cm, větší počet za příplatek (za každých dalších 10 ks 13×18 cm – +1 000 Kč k balíčku, fotografie 1 ks A3 – 500 Kč)'
     }
 ];
 
