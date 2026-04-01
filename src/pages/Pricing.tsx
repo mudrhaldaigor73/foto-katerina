@@ -29,7 +29,7 @@ const pricingItems = [
     {
         title: 'Svatební fotografie - balíček 3',
         price: '16000 Kč',
-        description: '(do 11 hodin focení) přípravy, obřad, společné focení po obřadu, hostina, portréty novomanželů, začátek zábavy cca 400 – 500 retušovaných fotografií v elektronické podobě'
+        description: '(do 11 hodin focení) přípravy, obřad, společné focení po obřadu, hostina, portréty novomanželů, začátek zábavy cca 400 – 500 fotografií v elektronické podobě (digitální galerie, webgalerie) – základní editace, z toho dle výběru 30 retušovaných design fotografií'
     }
 ];
 
