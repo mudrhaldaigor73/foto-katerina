@@ -1,10 +1,15 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Hero from '../components/sections/Hero';
 import ServiceSection from '../components/sections/ServiceSection';
 
 export default function Home() {
     return (
         <div className="animate-fade-in">
+            <Helmet>
+                <title>Foto Kateřina | Fotografka – novorozenci, rodiny, těhotenství, svatby</title>
+                <meta name="description" content="Kateřina Haldová – profesionální fotografka z Valašského Meziříčí s 8 lety praxe. Nabízí novorozenecké, těhotenské, rodinné a svatební focení po celé ČR." />
+            </Helmet>
             <Hero
                 title="Přirozená elegance & čisté emoce"
                 subtitle="Zachycuji jedinečné okamžiky s profesionálním přístupem a kreativním pohledem."

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import BlogCard from '../components/blog/BlogCard';
 
 const blogPosts = [
@@ -38,6 +39,10 @@ const blogPosts = [
 export default function Blog() {
     return (
         <div className="animate-fade-in">
+            <Helmet>
+                <title>Blog | Foto Kateřina – tipy a inspirace</title>
+                <meta name="description" content="Tipy na focení, příprava na novorozenecké a těhotenské focení, výběr oblečení pro rodiny a ukázky z mých oblíbených svateb." />
+            </Helmet>
             <section className="section" style={{ backgroundColor: 'var(--color-primary-light)' }}>
                 <div className="container" style={{ textAlign: 'center', maxWidth: '800px' }}>
                     <h1 style={{ marginBottom: '1rem' }}>Zápisky a inspirace</h1>

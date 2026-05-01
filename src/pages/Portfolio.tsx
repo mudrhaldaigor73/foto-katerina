@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Gallery, { type GalleryImage } from '../components/gallery/Gallery';
 
 // Sample data for the portfolio
@@ -45,6 +46,10 @@ const galleryCategories = [
 export default function Portfolio() {
     return (
         <div className="animate-fade-in">
+            <Helmet>
+                <title>Portfolio | Foto Kateřina – galerie fotografií</title>
+                <meta name="description" content="Prohlédněte si ukázky mé práce – novorozenci, těhotenství, rodiny a svatby. Přirozená lifestyle fotografie, Valašské Meziříčí a celá ČR." />
+            </Helmet>
             <section className="section" style={{ paddingBottom: 0 }}>
                 <div className="container" style={{ textAlign: 'center', maxWidth: '800px' }}>
                     <h1 style={{ marginBottom: '1rem' }}>Světy mých příběhů</h1>

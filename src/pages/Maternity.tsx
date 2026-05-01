@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import Hero from '../components/sections/Hero';
 import Gallery from '../components/gallery/Gallery';
 import { Link } from 'react-router-dom';
@@ -11,6 +12,10 @@ const maternityImages = [
 export default function Maternity() {
     return (
         <div className="animate-fade-in">
+            <Helmet>
+                <title>Těhotenské focení | Foto Kateřina – přirozené a emotivní</title>
+                <meta name="description" content="Oslava krásy těhotenství v přírodě nebo doma. Ideální čas: 28.–34. týden. 250 Kč za upravenou fotografii. Fotografka Kateřina, Valašské Meziříčí." />
+            </Helmet>
             <Hero
                 title="Těhotenské focení"
                 subtitle="Oslava nového života. Elegantní a nadčasové fotografie vašeho očekávání."

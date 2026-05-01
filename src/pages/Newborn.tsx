@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import Hero from '../components/sections/Hero';
 import Gallery from '../components/gallery/Gallery';
 import { Link } from 'react-router-dom';
@@ -16,6 +17,10 @@ const newbornImages = [
 export default function Newborn() {
     return (
         <div className="animate-fade-in">
+            <Helmet>
+                <title>Novorozenecké focení | Foto Kateřina – Valašské Meziříčí</title>
+                <meta name="description" content="Jemné a bezpečné focení novorozenců v prvních dnech života. Fotím u vás doma, ideálně mezi 7. a 14. dnem. 250 Kč/foto. Rezervujte ještě v těhotenství." />
+            </Helmet>
             <Hero
                 title="Novorozenecké focení"
                 subtitle="Čistota, jemnost a bezpečnost. Ty nejkrásnější první momenty s vaším děťátkem."

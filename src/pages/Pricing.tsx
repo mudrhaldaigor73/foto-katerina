@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import Hero from '../components/sections/Hero';
 
 const pricingItems = [
@@ -36,6 +37,10 @@ const pricingItems = [
 export default function Pricing() {
     return (
         <div className="animate-fade-in">
+            <Helmet>
+                <title>Ceník focení | Foto Kateřina – transparentní ceny</title>
+                <meta name="description" content="Přehledné ceny: portréty, novorozenci a těhotenství 250 Kč/foto. Svatební balíčky od 6 000 do 16 000 Kč. Cestovné 8 Kč/km po celé ČR." />
+            </Helmet>
             <Hero
                 title="Ceník"
                 subtitle="Přehledné ceny bez skrytých poplatků."

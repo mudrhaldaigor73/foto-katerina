@@ -1,9 +1,14 @@
+import { Helmet } from 'react-helmet-async';
 import ContactForm from '../components/forms/ContactForm';
 import { Mail, Phone, MapPin, Facebook } from 'lucide-react';
 
 export default function Contact() {
     return (
         <div className="animate-fade-in">
+            <Helmet>
+                <title>Kontakt | Foto Kateřina – Valašské Meziříčí</title>
+                <meta name="description" content="Napište mi na katykey@foto-katerina.cz nebo pošlete SMS na +420 777 848 118. Fotografka Kateřina, Valašské Meziříčí – Zlínský kraj." />
+            </Helmet>
             <section className="section">
                 <div className="container" style={{ maxWidth: '1000px' }}>
                     <div style={{ textAlign: 'center', marginBottom: '4rem' }}>

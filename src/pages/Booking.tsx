@@ -1,8 +1,13 @@
+import { Helmet } from 'react-helmet-async';
 import BookingForm from '../components/forms/BookingForm';
 
 export default function Booking() {
     return (
         <div className="animate-fade-in">
+            <Helmet>
+                <title>Rezervace termínu | Foto Kateřina – fotím novorozence, rodiny, svatby</title>
+                <meta name="description" content="Rezervujte termín novorozeneckého, těhotenského, rodinného nebo svatebního focení. Vyplňte formulář – ozvu se do 48 hodin." />
+            </Helmet>
             <section className="section" style={{ backgroundColor: 'var(--color-primary-light)' }}>
                 <div className="container" style={{ textAlign: 'center', maxWidth: '800px' }}>
                     <h1>Rezervace termínu</h1>

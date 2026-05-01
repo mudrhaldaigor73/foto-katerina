@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 export default function About() {
     return (
         <div className="animate-fade-in">
+            <Helmet>
+                <title>O mně | Kateřina Haldová – fotografka s 8 lety zkušeností</title>
+                <meta name="description" content="Fotografka Kateřina Haldová – 8 let praxe, lifestyle a rodinná fotografie, novorozenci v AGEL Valašské Meziříčí (Mimilens). Minimalistický a emotivní styl." />
+            </Helmet>
             <section className="section">
                 <div className="container">
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>

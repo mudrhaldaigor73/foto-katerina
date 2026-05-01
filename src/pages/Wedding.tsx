@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import Hero from '../components/sections/Hero';
 import Gallery from '../components/gallery/Gallery';
 import { Link } from 'react-router-dom';
@@ -12,6 +13,10 @@ const weddingImages: { id: string; category: string; url: string; alt: string }[
 export default function Wedding() {
     return (
         <div className="animate-fade-in">
+            <Helmet>
+                <title>Svatební fotografie | Foto Kateřina – balíčky od 6 000 Kč</title>
+                <meta name="description" content="Dokumentární svatební focení plné emocí. Balíčky od 6 000 Kč (3 hod) do 16 000 Kč (celodenní). Fotografka Kateřina, Valašské Meziříčí a celá ČR." />
+            </Helmet>
             <Hero
                 title="Svatební příběhy"
                 subtitle="Upřímné zachycení vašeho dne D. Bez nucení, přirozeně a v jemných tónech."
