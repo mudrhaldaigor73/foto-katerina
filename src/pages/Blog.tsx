@@ -1,40 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import BlogCard from '../components/blog/BlogCard';
-
-const blogPosts = [
-    {
-        id: 'priprava-na-foceni-novorozencu',
-        title: 'Jak se připravit na focení novorozenců u vás doma',
-        excerpt: 'Focení miminka v prvních dnech jeho života je krásný, ale někdy stresující zážitek. Přečtěte si pár tipů, jak zajistit, aby vše proběhlo v klidu.',
-        image: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=800',
-        date: '2023-10-15',
-        category: 'Tipy'
-    },
-    {
-        id: 'kdy-se-fotit-v-tehotenstvi',
-        title: 'Kdy je nejlepší čas na těhotenské focení?',
-        excerpt: 'Kdy je bříško tak akorát velké, ale vy se ještě cítíte plná energie? Odpověď pro fotky plné pohody.',
-        image: 'https://images.unsplash.com/photo-1510006851064-e6056cd0e3a8?auto=format&fit=crop&q=80&w=800',
-        date: '2023-09-22',
-        category: 'Těhotenství'
-    },
-    {
-        id: 'svatebni-pribeh-jana-a-petr',
-        title: 'Svatební příběh: Jana a Petr, láska v srdci přírody',
-        excerpt: 'Nahlédněte do emotivní letní svatby, která se odehrála pod širým nebem obklopená lesy a rodinou.',
-        image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=800',
-        date: '2023-08-10',
-        category: 'Svatby'
-    },
-    {
-        id: 'co-si-obleci-na-rodinne-foceni',
-        title: 'Co si obléci na rodinné lifestylové focení',
-        excerpt: 'Lámete si hlavu s tím, jak sladit rodinu? Zde je návod, jak vybrat barvy a materiály, které vyniknou na každé fotce.',
-        image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800',
-        date: '2023-07-05',
-        category: 'Rodina'
-    }
-];
+import { blogPosts } from '../data/blogPosts';
 
 export default function Blog() {
     return (
@@ -43,11 +9,12 @@ export default function Blog() {
                 <title>Blog | Foto Kateřina – tipy a inspirace</title>
                 <meta name="description" content="Tipy na focení, příprava na novorozenecké a těhotenské focení, výběr oblečení pro rodiny a ukázky z mých oblíbených svateb." />
             </Helmet>
+
             <section className="section" style={{ backgroundColor: 'var(--color-primary-light)' }}>
                 <div className="container" style={{ textAlign: 'center', maxWidth: '800px' }}>
                     <h1 style={{ marginBottom: '1rem' }}>Zápisky a inspirace</h1>
                     <p style={{ color: 'var(--color-text-light)' }}>
-                        Články, tipy na focení, ukázky z mých oblíbených svateb a střípky z mé fotografické cesty.
+                        Články, tipy na focení a střípky z mé fotografické cesty.
                     </p>
                 </div>
             </section>
@@ -57,7 +24,14 @@ export default function Blog() {
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '3rem 2rem' }}>
                         {blogPosts.map((post, index) => (
                             <div key={post.id} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                                <BlogCard {...post} />
+                                <BlogCard
+                                    id={post.id}
+                                    title={post.title}
+                                    excerpt={post.excerpt}
+                                    image={post.image}
+                                    date={post.date}
+                                    category={post.category}
+                                />
                             </div>
                         ))}
                     </div>
