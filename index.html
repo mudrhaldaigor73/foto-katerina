@@ -26,35 +26,91 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["LocalBusiness", "Photographer"],
-      "name": "Foto Kateřina",
-      "description": "Kateřina je profesionální fotografka specializující se na přirozené světlo, emoce a autentické okamžiky. Nabízí focení novorozenců, těhotenství, rodin a svateb.",
-      "url": "https://foto-katerina.cz/",
-      "telephone": "+420777848118",
-      "email": "katykey@foto-katerina.cz",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Valašské Meziříčí",
-        "addressCountry": "CZ"
-      },
-      "image": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80&w=1200",
-      "priceRange": "$$",
-      "areaServed": {
-        "@type": "Country",
-        "name": "Česká republika"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Fotografické služby",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Focení novorozenců" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Těhotenské focení" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Svatební fotografie" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rodinné a portrétní focení" } }
-        ]
-      },
-      "sameAs": [
-        "https://www.facebook.com/p/Mimilens-61575723786095/"
+      "@graph": [
+        {
+          "@type": ["LocalBusiness", "Photographer"],
+          "@id": "https://foto-katerina.cz/#business",
+          "name": "Foto Kateřina",
+          "description": "Profesionální fotografka Kateřina se specializuje na přirozené světlo, emoce a autentické okamžiky. Nabízí novorozenecké, těhotenské, rodinné a svatební focení.",
+          "url": "https://foto-katerina.cz/",
+          "telephone": "+420777848118",
+          "email": "katykey@foto-katerina.cz",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Valašské Meziříčí",
+            "addressRegion": "Zlínský kraj",
+            "addressCountry": "CZ"
+          },
+          "image": "https://foto-katerina.cz/images/hero-main.webp",
+          "priceRange": "$$",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Česká republika"
+          },
+          "founder": { "@id": "https://foto-katerina.cz/#katerina" },
+          "employee": { "@id": "https://foto-katerina.cz/#katerina" },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Fotografické služby",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@id": "https://foto-katerina.cz/#service-newborn" } },
+              { "@type": "Offer", "itemOffered": { "@id": "https://foto-katerina.cz/#service-maternity" } },
+              { "@type": "Offer", "itemOffered": { "@id": "https://foto-katerina.cz/#service-family" } },
+              { "@type": "Offer", "itemOffered": { "@id": "https://foto-katerina.cz/#service-wedding" } }
+            ]
+          },
+          "sameAs": [
+            "https://www.facebook.com/p/Mimilens-61575723786095/"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://foto-katerina.cz/#katerina",
+          "name": "Kateřina",
+          "jobTitle": "Profesionální fotografka",
+          "worksFor": { "@id": "https://foto-katerina.cz/#business" },
+          "url": "https://foto-katerina.cz/o-mne"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://foto-katerina.cz/#service-newborn",
+          "name": "Novorozenecké focení",
+          "description": "Jemné a bezpečné focení novorozenců v prvních dnech života. Zachytím vzácné okamžiky vašeho miminečka plné klidného spánku a dokonalých detailů.",
+          "url": "https://foto-katerina.cz/novorozenci",
+          "serviceType": "Novorozenecká fotografie",
+          "provider": { "@id": "https://foto-katerina.cz/#business" },
+          "areaServed": { "@type": "Country", "name": "Česká republika" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://foto-katerina.cz/#service-maternity",
+          "name": "Těhotenské focení",
+          "description": "Oslavte krásu těhotenství prostřednictvím přirozených a emotivních fotografií. Focení v přírodě nebo ateliéru, přizpůsobené vašemu stylu.",
+          "url": "https://foto-katerina.cz/tehotenstvi",
+          "serviceType": "Těhotenská fotografie",
+          "provider": { "@id": "https://foto-katerina.cz/#business" },
+          "areaServed": { "@type": "Country", "name": "Česká republika" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://foto-katerina.cz/#service-family",
+          "name": "Rodinné focení",
+          "description": "Autentické rodinné portréty plné lásky, smíchu a spontánních okamžiků. Zachytím vaši rodinu tak, jak opravdu jste.",
+          "url": "https://foto-katerina.cz/portrety",
+          "serviceType": "Rodinná fotografie",
+          "provider": { "@id": "https://foto-katerina.cz/#business" },
+          "areaServed": { "@type": "Country", "name": "Česká republika" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://foto-katerina.cz/#service-wedding",
+          "name": "Svatební focení",
+          "description": "Dokumentace vašeho svatebního dne od příprav až po večerní oslavu. Přirozené a emotivní fotografie, které vypráví příběh vašeho velkého dne.",
+          "url": "https://foto-katerina.cz/svatby",
+          "serviceType": "Svatební fotografie",
+          "provider": { "@id": "https://foto-katerina.cz/#business" },
+          "areaServed": { "@type": "Country", "name": "Česká republika" }
+        }
       ]
     }
     </script>
