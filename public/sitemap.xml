@@ -86,6 +86,12 @@
   </url>
 
   <url>
+    <loc>https://foto-katerina.cz/blog/fotografka-valasske-mezirici</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://foto-katerina.cz/kontakt</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>

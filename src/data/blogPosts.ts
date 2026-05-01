@@ -210,4 +210,49 @@ Někdy nejkrásnější záběry vznikají s minimem oblečení — jen jemná l
 <p>V ateliéru mám k dispozici různé látky a doplňky — pokud si nejste jistí výběrem, <a href="/kontakt">napište mi</a> předem a společně to vyřešíme.</p>
 `,
   },
+  {
+    id: 'fotografka-valasske-mezirici',
+    slug: 'fotografka-valasske-mezirici',
+    title: 'Fotografka Valašské Meziříčí — průvodce výběrem té pravé',
+    metaDescription: 'Hledáte fotografku ve Valašském Meziříčí? Průvodce výběrem správné fotografky pro novorozenecké, těhotenské, rodinné nebo svatební focení na Valašsku.',
+    excerpt: 'Hledáte fotografku ve Valašském Meziříčí nebo okolí? Ať už plánujete novorozenecké, těhotenské, rodinné nebo svatební focení, výběr správné fotografky je klíčový.',
+    date: '2026-02-14',
+    category: 'Tipy',
+    image: '/images/Katerina-hero.webp',
+    contentHtml: `
+<p>Hledáte fotografku ve Valašském Meziříčí nebo okolí? Ať už plánujete novorozenecké, těhotenské, rodinné nebo svatební focení, výběr správné fotografky je klíčový. Připravila jsem pro vás průvodce, který vám pomůže vybrat tu pravou.</p>
+
+<h3>Co si ujasnit před výběrem</h3>
+<p><strong>Jaký styl fotek chcete?</strong><br />
+Preferujete přirozené, světlé fotky plné emocí a spontánních okamžiků? Nebo klasické pózované portréty? Projděte si portfolia různých fotografů a poznáte, co vám "sedí".</p>
+<p><strong>Jaký je váš rozpočet?</strong><br />
+Ceny fotografů na Valašsku se liší. Počítejte s tím, že kvalitní fotograf investuje do vybavení, vzdělání a post-processingu — cena odráží tyto náklady.</p>
+<p><strong>Jaká je vzdálenost?</strong><br />
+Fotografové z Valašského Meziříčí jsou ideální pro focení v regionu — znají nejkrásnější lokace v okolí, od údolí řeky Bečvy přes přírodu Beskyd až po historické centrum města.</p>
+
+<h3>Proč místní fotografka?</h3>
+<p>Znalost lokálního prostředí je velká výhoda. Vím, kde jsou nejkrásnější luční záříjové scenérie, kde padá světlo večerního slunce, kde je v létě kvetoucí louka nebo kde najít klidné místo bez turistů.</p>
+
+<h3>Na co se zeptat</h3>
+<ul>
+  <li>Jak probíhá focení od rezervace po převzetí fotek?</li>
+  <li>Jak dlouho trvá zpracování?</li>
+  <li>Jaká je politika při špatném počasí?</li>
+  <li>Dostanu fotky v plném rozlišení?</li>
+</ul>
+
+<h3>Focení v okolí Valašského Meziříčí</h3>
+<p>Oblíbená místa, kde ráda fotím:</p>
+<ul>
+  <li><strong>Přírodní lokace</strong> — řeka Bečva, lesy a louky v okolí Valašska</li>
+  <li><strong>Beskydy</strong> — nádherné kulisy pro rodinné a těhotenské focení</li>
+  <li><strong>Historické centrum Valašského Meziříčí</strong></li>
+  <li><strong>Ateliér</strong> — pro novorozenecké focení a zimní portrétní sezónu</li>
+</ul>
+
+<h3>Jsem tu pro vás</h3>
+<p>Jmenuji se Kateřina a fotografování je moje vášeň i profese. Specializuji se na přirozené, emotivní fotografie, které zachytí skutečné momenty vašeho života. Fotím od Valašského Meziříčí po celou Českou republiku.</p>
+<p><a href="/kontakt">Napište mi</a> nebo se podívejte na <a href="/portfolio">moje portfolio</a> — ráda si s vámi popovídám.</p>
+`,
+  },
 ];
