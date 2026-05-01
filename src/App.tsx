@@ -8,15 +8,13 @@ import About from './pages/About';
 import Newborn from './pages/Newborn';
 import Maternity from './pages/Maternity';
 import Wedding from './pages/Wedding';
+import Portraits from './pages/Portraits';
 import Contact from './pages/Contact';
 import Booking from './pages/Booking';
 import Pricing from './pages/Pricing';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 
-const TemporaryComponent = ({ title }: { title: string }) => (
-  <div className="animate-fade-in"><section className="section"><div className="container" style={{ textAlign: 'center', paddingTop: '100px' }}><h1>{title}</h1><p>Stránka se připravuje</p></div></section></div>
-);
 
 function App() {
   return (
@@ -31,7 +29,7 @@ function App() {
           <Route path="/tehotenstvi" element={<Maternity />} />
 
           <Route path="/svatby" element={<Wedding />} />
-          <Route path="/portrety" element={<TemporaryComponent title="Portréty a rodina" />} />
+          <Route path="/portrety" element={<Portraits />} />
 
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />

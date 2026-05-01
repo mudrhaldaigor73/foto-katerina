@@ -14,8 +14,8 @@ export default function Wedding() {
     return (
         <div className="animate-fade-in">
             <Helmet>
-                <title>Svatební fotografie | Foto Kateřina – balíčky od 6 000 Kč</title>
-                <meta name="description" content="Dokumentární svatební focení plné emocí. Balíčky od 6 000 Kč (3 hod) do 16 000 Kč (celodenní). Fotografka Kateřina, Valašské Meziříčí a celá ČR." />
+                <title>Svatební fotografie | Foto Kateřina – Valašské Meziříčí, Beskydy, celá ČR</title>
+                <meta name="description" content="Dokumentární svatební fotografka Kateřina z Valašského Meziříčí. Fotím svatby po celé ČR — Beskydy, Morava i Čechy. Balíčky od 6 000 Kč." />
             </Helmet>
             <Hero
                 title="Svatební příběhy"
@@ -23,15 +23,20 @@ export default function Wedding() {
                 image="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=1920"
             />
 
+            {/* Philosophy */}
             <section className="section" style={{ backgroundColor: 'var(--color-primary-light)' }}>
                 <div className="container" style={{ textAlign: 'center', maxWidth: '800px' }}>
                     <h2 style={{ marginBottom: '1.5rem', fontSize: '2.5rem' }}>Dokumentární přístup s nádechem romantiky</h2>
-                    <p style={{ fontSize: '1.1rem', color: 'var(--color-text-light)', marginBottom: '3rem' }}>
-                        Váš svatební den je pro mě příběhem lásky, radosti a vzájemného spojení. Focení pojímám s respektem k dění okolo – mým cílem je nerušit, ale zachytávat drobné kouzelné okamžiky, které možná sami v té rychlosti přehlédnete.
+                    <p style={{ fontSize: '1.1rem', color: 'var(--color-text-light)', marginBottom: '1.5rem' }}>
+                        Váš svatební den je pro mě příběhem lásky, radosti a vzájemného spojení. Focení pojímám s respektem k dění okolo — mým cílem je nerušit, ale zachytávat drobné kouzelné okamžiky, které možná sami v té rychlosti přehlédnete.
+                    </p>
+                    <p style={{ fontSize: '1.1rem', color: 'var(--color-text-light)' }}>
+                        Jako svatební fotografka z Valašského Meziříčí fotím po celé České republice — od Beskyd a Moravy přes jižní Čechy až po Prahu. Znám nádherné lokace na Valašsku, ale stejně ráda cestuji za vámi kamkoliv, kde se váš velký den odehraje.
                     </p>
                 </div>
             </section>
 
+            {/* Packages + image */}
             <section className="section">
                 <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'flex-start' }}>
                     <div>
@@ -65,6 +70,28 @@ export default function Wedding() {
                 </div>
             </section>
 
+            {/* How it works */}
+            <section className="section" style={{ backgroundColor: 'var(--color-primary-light)' }}>
+                <div className="container" style={{ maxWidth: '900px' }}>
+                    <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>Jak spolupráce probíhá</h2>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem' }}>
+                        {[
+                            { num: '01', title: 'Nezávazná konzultace', text: 'Napište mi, povídáme si o vašich představách, termínu a lokaci. Osobní nebo online setkání.' },
+                            { num: '02', title: 'Rezervace a smlouva', text: 'Po domluvě rezervuji váš termín. Pracuji vždy se smlouvou, která chrání obě strany.' },
+                            { num: '03', title: 'Den svatby', text: 'Přijdu včas, neruším dění, zachytím váš příběh. Jsem součástí dne, ne jeho středem.' },
+                            { num: '04', title: 'Dodání fotografií', text: 'Do 6–8 týdnů obdržíte online galerii s hotovými fotografiemi ve vysokém rozlišení.' },
+                        ].map((step) => (
+                            <div key={step.num} style={{ padding: '1.5rem 0' }}>
+                                <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--color-primary)', marginBottom: '0.5rem', fontFamily: 'var(--font-heading)' }}>{step.num}</div>
+                                <h3 style={{ fontSize: '1.05rem', marginBottom: '0.5rem' }}>{step.title}</h3>
+                                <p style={{ color: 'var(--color-text-light)', fontSize: '0.95rem', lineHeight: 1.7, margin: 0 }}>{step.text}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Gallery */}
             <section className="section" style={{ backgroundColor: 'var(--color-surface)' }}>
                 <div className="container">
                     <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Galerie</h2>
@@ -72,11 +99,17 @@ export default function Wedding() {
                 </div>
             </section>
 
+            {/* CTA */}
             <section className="section" style={{ textAlign: 'center' }}>
-                <div className="container">
+                <div className="container" style={{ maxWidth: '600px' }}>
                     <h2 style={{ marginBottom: '1.5rem' }}>Zajímá vás moje dostupnost pro váš den?</h2>
-                    <p style={{ margin: '0 auto 2rem', color: 'var(--color-text-light)' }}>Napište mi a společně vymyslíme koncept pro vaše vysněné focení.</p>
-                    <Link to="/kontakt" className="btn">Napište mi</Link>
+                    <p style={{ margin: '0 auto 2rem', color: 'var(--color-text-light)' }}>
+                        Termíny se obsazují rychle — neváhejte se ozvat s předstihem. Ráda si s vámi popovídám o vašem velkém dni.
+                    </p>
+                    <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                        <Link to="/kontakt" className="btn">Napište mi</Link>
+                        <Link to="/blog/jak-vybrat-svatebniho-fotografa" className="btn btn-outline">Jak vybrat fotografa →</Link>
+                    </div>
                 </div>
             </section>
         </div>
