@@ -60,7 +60,7 @@ export default function Newborn() {
                         První dny života vašeho miminka jsou neuvěřitelně rychle prchavé. Mým cílem je tyto momenty zachytit s maximálním ohledem na pohodlí maminky i miminka. Jako novorozenecká fotografka působím ve Valašském Meziříčí a dojíždím po celém Zlínském kraji — focení probíhá v klidu, bez spěchu, ideálně u vás doma v přirozeném prostředí.
                     </p>
                     <p style={{ fontSize: '1.1rem', color: 'var(--color-text-light)', marginBottom: '3rem' }}>
-                        Mám zkušenosti také z focení novorozenců přímo v porodnici AGEL Valašské Meziříčí v rámci projektu Mimilens — takže znám potřeby miminek i rodičů od prvních hodin života.
+                        Mám zkušenosti také z focení novorozenců přímo v porodnici AGEL Valašské Meziříčí v rámci projektu <a href="https://www.mimilens.cz" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', textDecoration: 'underline', textUnderlineOffset: '3px' }}>Mimilens</a> — takže znám potřeby miminek i rodičů od prvních hodin života.
                     </p>
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', textAlign: 'left', marginTop: '3rem' }}>
